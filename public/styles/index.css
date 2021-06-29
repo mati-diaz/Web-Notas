@@ -51,6 +51,7 @@ button {
 }
 .nav-item:hover {
     color: rgb(172, 172, 172);
+    cursor: pointer;
 }
 .new-note {
     color: #ffffff;
