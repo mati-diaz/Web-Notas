@@ -1,0 +1,21 @@
+<%- include('partials/header') -%>
+    <div class="container">
+        <% for(var i = 0; i < notes.length; i++) { %>
+            <% if(!notes[i].deleted) { %>
+                <div class="note">
+                    <p class="title"><%= notes[i].title %></p>
+                    <p class="description"><%= notes[i].description %></p>
+                    <div class="note-actions">
+                        <form action="/delete-note/<%= notes[i]._id %>" method="POST">
+                            <button type="submit" class="delete">Delete</button>
+                        </form>
+                        <a href="/edit-note/<%= notes[i]._id %>">
+                            <button class="edit">Edit</button>
+                        </a>
+                    </div>
+                </div>
+            <% } %>
+        <% } %>
+    </div>
+
+<%- include('partials/footer') -%>

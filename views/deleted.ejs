@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <title>Notes</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-items">
+            <a href="/">
+                <h1 class="tile">Notes</h1>
+            </a>
+
+            <nav class="nav">
+                <form action="/empty-trash" method="POST">
+                    <button type="submit" class="nav-item">Empty Trash</button>
+                </form>
+                <a href="/trash" class="nav-item">Trash</a>
+                <a href="/new-note" class="nav-item new-note">New Note</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <% for(var i = 0; i < notes.length; i++) { %>
+            <% if(notes[i].deleted) { %>
+                <div class="note">
+                    <p class="title"><%= notes[i].title %></p>
+                    <p class="description"><%= notes[i].description %></p>
+                    <div class="note-actions">
+                        <form action="/delete/<%= notes[i]._id %>" method="POST">
+                            <button type="submit" class="delete">Delete</button>
+                        </form>
+                        <form action="/restore/<%= notes[i]._id %>" method="POST">
+                            <button type="submit" class="edit">Restore</button>
+                        </form>
+                    </div>
+                </div>
+            <% } %>
+        <% } %>
+    </div>
+
+<%- include('partials/footer') -%>

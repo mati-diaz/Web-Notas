@@ -1,0 +1,143 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+p {
+    margin: 0;
+}
+button {
+    background-color: inherit;
+    border: none;
+}
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.header {
+    border-bottom: 2px solid #414141;
+    background-color: rgb(65, 65, 65);
+    position: sticky;
+    top: 0;
+}
+.header-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title {
+    font-weight: 800;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav-item {
+    color: #ffffff;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+.nav-item:hover {
+    color: rgb(172, 172, 172);
+}
+.new-note {
+    color: #4e4e4e;
+    border: 1px solid #e2e2e2;
+    background-color: #00d652;
+    padding: 20px;
+    border-radius: 5px;
+}
+.new-note:hover {
+    color: #4e4e4e;
+    background-color: rgb(48, 253, 48);
+}
+.form-note {
+    margin-top: 80px;
+}
+.fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 10px;
+}
+.form-label {
+    text-align: center;
+}
+.title-input, .desc-input {
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    border: 2px solid #4e4e4e;
+}
+.title-input {
+    height: 40px;
+}
+.save-cancel-btn {
+    display: flex;
+    justify-content: space-evenly;
+}
+.save, .cancel {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.cancel {
+    background-color: rgb(255, 152, 78);
+}
+.save {
+    background-color: rgb(145, 255, 145);
+}
+.note {
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid #4e4e4e;
+    border-radius: 5px;
+}
+.title {
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    text-decoration: underline #4e4e4e;
+}
+.description {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 20px;
+}
+.note-actions {
+    display: flex;
+    justify-content: space-evenly;
+}
+.edit, .delete {
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.edit {
+    background-color: rgb(42, 195, 255);
+}
+.delete {
+    background-color: rgb(255, 161, 38);
+}
+.title404 {
+    text-align: center;
+    margin-top: 50px;
+}

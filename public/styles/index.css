@@ -1,0 +1,155 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: rgb(26, 26, 26);
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+p {
+    margin: 0;
+}
+button {
+    background-color: inherit;
+    border: none;
+}
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.header {
+    background-color: rgb(65, 65, 65);
+    position: sticky;
+    top: 0;
+}
+.header-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title {
+    font-weight: 800;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav-item {
+    color: #ffffff;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+.nav-item:hover {
+    color: rgb(172, 172, 172);
+}
+.new-note {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background-color: #00d652;
+    padding: 20px;
+    border-radius: 5px;
+}
+.new-note:hover {
+    color: black;
+    background-color: rgb(48, 253, 48);
+}
+.form-note {
+    margin-top: 80px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+}
+.fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 10px;
+}
+.form-label {
+    text-align: center;
+    color: white;
+}
+.title-input, .desc-input {
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    background-color: rgb(143, 143, 143);
+    border: 2px solid #ffffff;
+}
+.title-input {
+    height: 40px;
+}
+.save-cancel-btn {
+    display: flex;
+    justify-content: space-evenly;
+}
+.save, .cancel {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+}
+.cancel {
+    background-color: rgb(255, 152, 78);
+}
+.save {
+    background-color: rgb(48, 253, 48);
+    color: black;
+}
+.note {
+    margin: 40px 0;
+    padding: 10px;
+    border: 2px solid rgb(204, 204, 204);
+    background-color: rgb(41, 41, 41);
+    -webkit-box-shadow: -10px 0px 13px -7px #838383, 10px 0px 13px -7px #838383, 0px 0px 20px 0px rgba(131,40,58,0); 
+    box-shadow: -10px 0px 13px -7px #838383, 10px 0px 13px -7px #838383, 0px 0px 20px 0px rgba(131,40,58,0);
+    border-radius: 5px;
+}
+.title {
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    color: white
+}
+.description {
+    text-align: center;
+    color: white;
+    margin: 30px 0;
+    font-size: 20px;
+}
+.note-actions {
+    display: flex;
+    justify-content: space-evenly;
+}
+.edit, .delete {
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+}
+.edit {
+    background-color: rgb(42, 195, 255);
+}
+.delete {
+    background-color: rgb(255, 161, 38);
+}
+.title404 {
+    text-align: center;
+    margin-top: 50px;
+}
